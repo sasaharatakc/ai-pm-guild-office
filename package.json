@@ -1,0 +1,22 @@
+{
+  "name": "ai-pm-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI PM OS reference monorepo",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "generate": "pnpm --filter @aipm/generators generate",
+    "conformance": "pnpm --filter @aipm/conformance test",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "prettier": "^3.3.0"
+  }
+}
